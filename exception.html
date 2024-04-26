@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div id="demo"></div>
+
+    <script>
+try{
+    alert("Welcome Guest...!");
+}
+catch(err){
+    document.getElementById("demo").innerHTML=err.message;
+} -->
+
+    <!-- <script>
+  function myFun(){
+    var a=100;
+    var b=10;
+  
+
+  try{
+    if(b==0){
+        throw("Divide zero error");
+    }else{
+        var c=a/b; 
+        alert(c);
+    }
+  }
+
+  catch(e){
+    alert("error:" +e);
+  }
+}
+  myFun();
+    </script> -->
+
+
+    <script>
+        try{
+            var a=12;
+            if(a==2){
+            document.write("Ok" + "<br>")
+            } }
+            catch(error){
+document.write("error found :" + error.message)
+            }
+            finally{
+                document.write("value of a is 2");
+            }
+        
+    </script>
+</body>
+
+</html>

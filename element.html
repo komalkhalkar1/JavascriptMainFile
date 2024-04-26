@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <p id="p1">This is first p element</p> 
+   <div id="div1">This is the first div element</div>
+
+
+<script>
+    document.getElementById("p1").innerHTML="Hi";
+
+    document.getElementById("div1").innerHTML="This is changing html element";
+</script> -->
+
+    <!-- <img src="img2.jpg" alt="" id="myImage">
+
+<script>
+    document.getElementById("myImage").src="img3.webp";
+</script> -->
+
+    <!-- <p id="p2">Hello world..!</p>
+
+<script>
+    document.getElementById("p2").style.color="red";
+</script> -->
+
+    <!-- <ul id="menu">
+        <li>Home</li>
+    </ul>
+
+
+    <script>
+const menu=document.querySelector('#menu');
+
+let li=document.createElement('li');
+li.textContent='AboutUs';
+menu.appendChild(li);
+    </script> -->
+
+<!-- <p>Click romove to remove first item from list</p>
+<button onclick="myFunction()">Remove</button> -->
+
+
+<p>click to replace first item</p>
+
+<button onclick="myFunction()">Replace</button>
+
+<ul id="myList">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+    <li>Bootstrap</li>
+</ul>
+
+<script>
+    function myFunction(){
+        const element=document.getElementById('myList').children[0];
+
+        const newNode=document.createTextNode("fullstack");
+
+        element.replaceChild(newNode,element.childNodes[0])
+    }
+</script>
+
+
+
+<!-- <script>
+    function myFunction(){
+        const list=document.getElementById("myList");
+        list.removeChild(list.lastElementChild);
+    }
+</script> -->
+</body>
+
+</html>

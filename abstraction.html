@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    class Course{
+        price(){
+            console.log("This is course class");
+        }
+    }
+    class Frontend extends Course{
+        price(){
+            console.log("Price of this course is 20k");
+        }
+    }
+    class Backend extends Course{
+        price(){
+            console.log("price of this course is 25k");
+
+        }
+    } 
+    class Datascience extends Course{
+        price(){
+            console.log("Price of this course is 70k")
+        }
+    }
+
+    f=new Datascience();
+    f.price();
+  </script>  
+</body>
+</html>

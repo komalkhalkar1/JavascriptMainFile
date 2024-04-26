@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>This is p tag</p>
+    <p>This is 1st file</p>
+    <p>Welcome to Dom</p>
+    <h1>This is h1 tag</h1>
+    <h1>This is h1 tag</h1>
+    <p>is p tag</p>
+    <p>This is 1st file</p>
+    <p>Welcome to Dom</p>
+    <h1>This is h1 tag</h1>
+    <h1>This is h1 tag</h1>
+
+    <button onclick="count1()">Count</button>
+
+    <script>
+        function count1() {
+            var total = document.getElementsByTagName("h1");
+
+            alert("Total h1 tags are : " + total.length);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <!-- <pre>       Hello </pre>
+ <p>         Hello</p> -->
+ <pre id="demo3"><p id="demo1"></p></pre>
+ <pre><p id="demo2"></p></pre>
+
+    <script>
+        let a="JavaScript is easy JavaScript ";
+        document.write(a.length);
+document.write("<br>");
+// document.write(a.replace("JavaScript","HTML"));
+document.write(a.replaceAll("JavaScript","HTML"));
+document.write("<br>");
+let a1='Hello';
+document.write(a1);
+document.write("<br>");
+let a2="World";
+document.write(a1.concat(a2));
+document.write("<br>");
+
+const message="Javascript is fun";
+document.write(message + "<br>");
+document.write(message.slice(0,12));
+document.write("<br>");
+
+// trim()
+// let text="       Hello world";
+// document.write(text.length);
+// document.write("<br>");
+// document.write(text.trim());
+// document.write("<br>");
+
+
+    </script>
+
+    <script>
+        let a11="       Hello World   ";
+        let result=a11.trimStart();
+
+        document.getElementById("demo3").innerHTML=result;
+
+        document.write("<br>");
+
+        const msg="Javascript is not java";
+        // document.write(msg.indexOf("va"));
+        document.write("<br>");
+        document.write(msg.lastIndexOf("va"));
+        document.write("<br>");
+
+        document.write(msg.repeat(3));
+        document.write("<br>");
+
+// splice
+const arr=["HTML","CSS","js","ts"];
+document.write(arr);
+document.write("<br>");
+document.write(arr.splice(0,2,"Hello","good"));
+document.write("<br>");
+document.write(arr);
+
+
+        
+
+
+    </script>
+</body>
+</html>

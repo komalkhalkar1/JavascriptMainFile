@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>click button to interact with the window</p>
+    <button onclick="openWindow()">open window</button>
+    <br><br>
+    <button onclick="closeWindow()">Close window</button>
+
+    <script>
+let newWindow;
+
+function openWindow(){
+    newWindow=window.open("https://unsplash.com/s/photos/animal" , '_blank','width=800 height=600'); 
+}
+
+function closeWindow(){
+    if(newWindow){
+        newWindow.close();
+    }
+}
+
+
+
+
+
+
+        // document.write("Innerwidth is:" + window.innerWidth + "<br>");
+
+        // document.write("Outerwidth is:" + window.outerWidth + "<br>");
+
+        // document.write("Innerheight is:" + window.innerHeight + "<br>");
+
+        // document.write("OuterHeight is:" + window.outerHeight + "<br>");
+
+        // document.write("Innerwidth is:" + window.innerWidth + "<br>");
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

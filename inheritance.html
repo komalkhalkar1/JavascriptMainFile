@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        class Employee {
+            constructor(name) {
+                this.name = name;
+            }
+            allData() {
+                return "Name of the company is:" + this.name
+            }
+        }
+        class Admin extends Employee {
+            constructor(name, year) {
+                super(name);
+                this.year = year;
+            }
+            adminData(){
+                return this.allData() + " " + " Joinning year is: " + this.year
+            }
+        }
+
+        let data=new Admin("IBM" ,2023);
+        document.write(data.adminData());
+        
+
+    </script>
+</body>
+
+</html>

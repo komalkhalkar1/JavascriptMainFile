@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Student{
+            constructor(name,age,contact,email){
+                this.name=name,
+                this.age=age,
+                this.contact=contact,
+                this.email=email
+
+                console.log("This is class");
+            }
+            display(){
+                console.log("Student name is:",this.name);
+                console.log("Student age is:",this.age);
+                console.log("student contact is:",this.contact);
+                console.log("Student email is:",this.email);
+            }
+            // info(){
+            //     console.log("student contact is:",this.contact);
+            //     console.log("Student email is:",this.email);
+            // }
+        }
+        const s=new Student("John",28,12345,"john@gmail.com")
+        s.display();
+        // s.info();
+    </script>
+</body>
+</html>

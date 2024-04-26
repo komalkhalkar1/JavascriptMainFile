@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+
+
+
+        // 1) Arithmetic operator
+        // + , - ,* ,/ ,%,++,--,**
+
+        let x=50;
+        let y=10;
+        let z= x%y;
+        document.write(z);
+
+        document.write("<br>");
+
+        let a=5;
+        a--;
+        document.write(a);
+
+        document.write("<br>");
+
+        let a1=2;
+        let a2=3;
+        let c=a1**a2;
+        document.write(c);
+        document.write("<br>");
+// 2)Assingment operator
+// =,+=,-=,*=,/=,%=
+
+let x1=5;
+x1*=10;
+document.write(x1);
+document.write("<br>");
+
+// 3)comparision operator
+// ==,!=,===
+let z1=8;
+let z2=8;
+document.write(z1>=z2);
+document.write("<br>");
+
+// 4)Logical operator
+// AND(&&) ,OR(||),NOT(!) 
+
+const c1=5 ,c2=3;
+const h1=(c1<1 && c2<5);
+document.write(h1); 
+
+
+document.write("<br>");
+document.write((10==10 || 20==33));
+
+document.write("<br>");
+document.write(!(10==12));
+
+    </script>
+    <script>
+    // &,|,~
+    document.write("<br>");
+      let result=5 | 3;
+      document.write(result)   
+    </script>
+
+    <script>
+        document.getElementById('demo').innerHTML=~5;
+    </script>
+</body>
+</html>

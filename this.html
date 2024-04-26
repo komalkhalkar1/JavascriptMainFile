@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- this -->
+    <p id="demo"></p>
+
+
+    <script>
+        // let laptop={
+        //     CPU:'i9',
+        //     RAM:16,
+        //     brand:'HP',
+
+        //     greet:function(){
+        //         document.write(this.CPU);
+
+        //     }
+        // }
+        // laptop.greet();
+
+        // const person={
+        //     fname:"John",
+        //     lname:"Peter",
+        //     id:123,
+
+        //     userdefault:function(){
+        //         return this.fname + " " + this.lname + " " + this.id;
+        //     }
+        // }
+        // document.write(person.userdefault());
+
+//         const person = {
+// fullname:function(){
+//     return this.fname + " " + this.lname;
+// }
+//         }
+//         const person1={
+//             fname:"John",
+//             lname:"peter"
+//         }
+//         const person2={
+//             fname:"Willium",
+//             lname:"ray"
+//         }
+//         document.getElementById("demo").innerHTML=person.fullname.call(person2);
+
+
+
+const person={
+    fullname:function(city,country){
+        return  "my name is:" + this.fname + " " + this.lname + " " + city + " " + country;
+    }
+}
+const person1={
+    fname:"Aman",
+    lname:"Kumar"
+}
+document.getElementById('demo').innerHTML=person.fullname.apply(person1,["pune","India"]);
+
+    </script>
+</body>
+
+</html>

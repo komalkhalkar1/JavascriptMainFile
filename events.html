@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* p {
+        background-color: gray;
+    } */
+    #track{
+        background-color: goldenrod;
+        height: 100px;
+        width: 200px;
+    }
+</style>
+
+<body>
+    <!-- <button onclick="clickevent()">Click Me</button>
+
+    <script>
+function clickevent(){
+    document.write("This is onclick event")
+}
+    </script> -->
+
+
+    <!-- <p onmouseover="mouse()">Keep cursor over me</p>
+
+    <script>
+        function mouse(){
+            alert("This is mouseover event")
+        } -->
+    <!-- </script> -->
+
+    <!-- <div id="hover" onmouseout="out()" style="background-color: crimson; height: 100px; width: 100px;"></div>
+
+    <script>
+        function out(){
+            var e=document.getElementById('hover');
+            e.style.display='none'
+        } -->
+    <!-- </script> -->
+
+    <p>Move your mouse to see it's location</p>
+
+    <div id="track"></div>
+    <p id="log"></p>
+
+
+    <script>
+        let track=document.querySelector('#track');
+
+        track.addEventListener('mousemove',(e)=>{
+            let log=document.querySelector('#log');
+            log.innerText=`screenX/Y:(${e.screenX},${e.screenY})
+            clientX/Y:(${e.screenX},${e.screenY})`
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+
+        Enter UserName:
+        <input type="text" id="t1"><br><br>
+
+        Enter password:
+        <input type="password" id="t2"><br><br>
+
+        Enter Confirm password:
+        <input type="password" id="t3"><br><br>
+
+        Enter Age:
+        <input type="number" id="t4"><br><br>
+
+        Enter Contact number:
+        <input type="number" id="t5"><br><br>
+
+        <input type="button" id="b1" onclick="validation()" value="Register"><br><br><br>
+
+        <span id="s1"></span>
+
+
+
+
+    </form>
+
+
+    <script>
+function validation(value){
+
+    let Uname=document.getElementById("t1").value;
+    let pwd=document.getElementById("t2").value;
+    let cpwd=document.getElementById("t3").value;
+    let age=document.getElementById("t4").value;
+    let phone=document.getElementById("t5").value;
+    let r="";
+
+    if(Uname.length==0){
+        r += "user name should not be empty...!" + "<br>"
+
+    }
+
+
+    if(pwd.length==0){
+        r += "password should not be empty...!" + "<br>"
+    }
+
+    if(cpwd.length==0){
+        r += "confirm password should not be empty...!"
+    }
+
+    if(Uname==pwd){
+        r +="isername and password should not be same...!" + "<br>";
+
+    }
+
+    if(pwd.length<8 || pwd.length>15){
+        r += "password should not be of 8 to 15 characters only...!" +"<br>"
+    }
+    if(age.length!==0){
+        if(age<18 || age>25){
+            r += "Age should be of 18 to 25 years only...!" + "<br>";
+        }
+    }
+    else{
+        r += "Age should not be empty...!" + "<br>"
+    }
+
+    if(phone.length!==0){
+        if(phone.length>10 || phone.length<10)
+        r += "contact number should be of 10 digits only.....!"
+    }
+    else{
+        r += "contact number should not be empty" + "<br>"
+    }
+
+    document.getElementById("s1").innerHTML=r;
+
+}
+    </script>
+
+</body>
+
+</html>

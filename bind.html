@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="myFunction()">Count..!</button>
+<p id="demo"></p>
+
+<script>
+    // const personullname.bind(person);
+    // document.getElementBy={
+    //     fname:"Amit",
+    //     lname:"kumar",
+
+    //     fullname:function(){
+    //         return this.fname + " " + this.lname 
+            
+    //     }
+    // }
+    // const member={
+    //     fname:"Aman",
+    //     lname:"Peter"
+    // }
+
+    // let fullname=person.fId("demo").innerHTML=fullname();
+
+
+    const add=(function(){
+let counter=0;
+return function(){
+    counter +=1;
+    return counter;
+}
+    })();
+    function myFunction(){
+        document.getElementById("demo").innerHTML=add();
+    }
+
+
+</script>
+</body>
+</html>
